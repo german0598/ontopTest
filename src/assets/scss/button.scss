@@ -1,0 +1,24 @@
+@import './variables';
+
+.btn {
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 270px;
+  line-height: normal;
+  font-size: 13px;
+}
+
+.btn-primary {
+  background: $primary-color;
+  color: $white-color;
+}
+
+.btn-grey {
+  background: $grey-color;
+  color: #1C0B11;
+}

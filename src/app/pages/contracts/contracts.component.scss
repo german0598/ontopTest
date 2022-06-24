@@ -11,16 +11,20 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-
-  &>{
-    width: 100%;
-  }
+  gap: 10px;
 
   .contracts__tittle{
     display: flex;
     justify-content: center;
+    width: 100%;
+
     h2{
       font-size: 2rem;
     }
   }
+
+  .contracts__table{
+    width: 100%;
+  }
+
 }
