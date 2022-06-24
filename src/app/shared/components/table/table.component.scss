@@ -7,12 +7,20 @@
 .cont-table{
   width: 100%;
 
-  .table{
+  .table-style{
     width: 100%;
-    padding: 36px 15px 30px 15px;
     background-color: $white-color;
     border-radius: $border-radius-base;
     box-shadow: $box-shadow-base;
+  }
+
+  .table-xl{
+    padding: 36px 15px 30px 15px;
+    display: none;
+
+    @media (min-width: $grid-breakpoints-lg) {
+      display: block;
+    }
 
     .header-column{
       display: flex;
@@ -87,14 +95,47 @@
       }
     }
 
-    button{
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-
     .icon-delete{
       color: $primary-color;
     }
+  }
+
+  .table-xs{
+    display: block;
+    opacity: 1;
+    padding: 15px 25px;
+    flex-flow: column wrap;
+
+    .table-row{
+      padding: 10px;
+      display: flex;
+      flex-flow: row wrap;
+      height: 40px;
+
+      .key{
+        flex-basis: 40%;
+        height: 100%;
+      }
+
+      .value{
+        flex-basis: 60%;
+        height: 100%;
+      }
+    }
+
+    &>:nth-child(2n - 1){
+      background-color: $backgroun-color;
+    }
+
+    @media (min-width: $grid-breakpoints-lg) {
+      display: none;
+    }
+
+  }
+
+  button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
   }
 }

@@ -1,5 +1,6 @@
 <div class="cont-table">
-  <div class="table">
+
+  <div class="table-style table-xl">
     <div class="table__header">
       <div class="table__header-header">
         <div class="header-column">
@@ -111,4 +112,78 @@
       </div>
     </div>
   </div>
+
+  <div class="table-style table-xs">
+    <div class="table-row">
+      <div class="key">
+        <h5>Contractor name</h5>
+      </div>
+      <div class="value">
+        <span>Traditional</span>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="key">
+        <h5>Contractor name</h5>
+      </div>
+      <div class="value">
+        <span>Traditional</span>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="key">
+        <h5>Contractor name</h5>
+      </div>
+      <div class="value">
+        <span>Traditional</span>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="key">
+        <h5>Status</h5>
+      </div>
+      <div class="value">
+        <span class="badge badge-warning">
+          <div class="xs-circle backgroud-warning"></div> Signature pending
+        </span>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="key">
+        <h5>Contractor name</h5>
+      </div>
+      <div class="value">
+        <span>Traditional</span>
+      </div>
+    </div>
+    <div class="table-row">
+      <div class="key">
+        <h5>Actions</h5>
+      </div>
+      <div class="value">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="action-menu-table">
+          <mat-icon style="color: #C4C4C4;">more_horiz</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>edit</mat-icon>
+            <span>Edit</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>gesture</mat-icon>
+            <span>Sign</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>description</mat-icon>
+            <span>View summary</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon style="color:#FF5A70;">delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+
 </div>
