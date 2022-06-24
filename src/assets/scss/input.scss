@@ -1,0 +1,57 @@
+@import './variables';
+
+.input{
+  position: relative;
+  display: block;
+}
+
+.input-icon{
+  span{
+    position: absolute;
+    left: 10px;
+    bottom: 28%;
+    color: #DADADA;
+  }
+
+  input {
+    padding-left: 40px;
+  }
+
+}
+
+.input-xl {
+  input{
+    height: 58px;
+    font-size: 18px;
+  }
+}
+
+input {
+  outline-style: none;
+  background-color: $white-color;
+  border: 0.5px solid #989B9B;
+  border-radius: 5px;
+  color: $label-color;
+  height: 40px;
+  width: 80px;
+  transition: .2s;
+  padding: 5px 15px;
+
+  &:focus{
+    border: 1.3px solid $primary-color;
+    transition: .6s;
+  }
+
+  &:hover{
+    border: 1.3px solid $primary-color;
+    transition: .2s;
+  }
+
+  &::placeholder{
+    color: #C4C4C4;
+  }
+}
+
+input.input-shadow {
+  box-shadow: $box-shadow-base;
+}

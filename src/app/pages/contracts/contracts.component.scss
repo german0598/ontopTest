@@ -17,11 +17,78 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 40px;
 
     h2{
       font-size: 2rem;
     }
   }
+
+  .contracts__controls{
+    width: 100%;
+    margin-bottom: 20px;
+    .contracts__controls-primariess{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 60% 15% 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+
+      .input{
+        input{
+          width: 100%;
+        }
+      }
+
+      .filter{
+        width: 100%;
+        height: 100%;
+
+        button{
+          width: 100%;
+          height: 100%;
+          font-size: 13px;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.25px;
+          &>:first-child{
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .new-hire{
+        width: 100%;
+        height: 100%;
+        button{
+          width: 100%;
+          height: 100%;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 0.18px;
+          &>:first-child{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    .contracts__controls-secondaries{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 20% 30% 15%;
+      gap: 10px;
+
+      & > {
+        width: 100%;
+      }
+
+      input{
+        width: 100%;
+      }
+    }
+  }
+
 
   .contracts__table{
     width: 100%;
