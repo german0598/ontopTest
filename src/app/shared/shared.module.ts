@@ -4,11 +4,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { TableComponent } from './components/table/table.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { SelectComponent } from './components/select/select.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    TableComponent
+    TableComponent,
+    SelectComponent,
+    CalendarComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +21,9 @@ import { MatIconModule } from '@angular/material/icon';
   ],
   exports: [
     NavbarComponent,
-    TableComponent
+    TableComponent,
+    SelectComponent,
+    CalendarComponent
   ]
 })
 export class SharedModule { }

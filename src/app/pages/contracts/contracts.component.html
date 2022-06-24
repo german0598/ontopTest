@@ -28,16 +28,17 @@
     </div>
     <div class="contracts__controls-secondaries">
       <div class="contracts__controls-calendar">
-        <input autocomplete="off" type="text" class="input-shadow" name="calendar" id="calendar" placeholder="Calendar">
+        <!-- <input autocomplete="off" type="text" class="input-shadow" name="calendar" id="calendar" placeholder="Calendar"> -->
+        <app-calendar></app-calendar>
       </div>
       <div class="contracts__controls-type">
-        <input autocomplete="off" type="text" class="input-shadow" name="type" id="type" placeholder="Contract type">
+        <app-select [placeholder]="'Contract type'"></app-select>
       </div>
       <div class="contracts__controls-name">
         <input autocomplete="off" type="text" class="input-shadow" name="name" id="name" placeholder="Contract name">
       </div>
       <div class="contracts__controls-status">
-        <input autocomplete="off" type="text" class="input-shadow" name="status" id="status" placeholder="Status">
+        <app-select [placeholder]="'Status'"></app-select>
       </div>
     </div>
   </div>

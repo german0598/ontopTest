@@ -1,0 +1,70 @@
+@import '../../../../assets/scss/variables.scss';
+
+:host{
+  width: 100%;
+}
+
+.select {
+  position: relative;
+  min-width: 200px;
+
+  svg {
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 3px);
+    width: 10px;
+    height: 6px;
+    stroke-width: 2px;
+    stroke: #C4C4C4;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+
+  select {
+    height: 100%;
+    -webkit-appearance: none;
+    padding: 7px 40px 7px 12px;
+    width: 100%;
+    background-color: $white-color;
+    border: 0.5px solid #989B9B;
+    border-radius: $border-radius-base;
+    box-shadow: $box-shadow-base;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    transition: all 150ms ease;
+
+    &:required:invalid {
+      color: $hint-color;
+    }
+
+    option {
+      color: $label-color;
+    }
+
+    option[value=""][disabled] {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+      box-shadow: $box-shadow-base;
+    }
+
+    &:hover + svg {
+      stroke: $primary-color;
+    }
+  }
+}
+
+
+.sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}

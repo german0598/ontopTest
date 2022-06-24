@@ -1,0 +1,22 @@
+
+.calendar{
+  width: 100%;
+  gap: 5px;
+  display: grid;
+  grid-template-columns: 29% 1fr 29%;
+  gap: 5px;
+
+  .calendar-day{
+    flex-basis: 29%;
+  }
+  .calendar-month{
+    flex-basis: 1fr;
+  }
+  .calendar-year{
+    flex-basis: 29%;
+  }
+
+  input{
+    width: 100%;
+  }
+}
