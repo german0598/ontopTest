@@ -1,0 +1,137 @@
+@import '../../../../assets/scss/variables.scss';
+
+.navbar-fixed-top {
+  position: sticky;
+  top: 0;
+}
+
+.nav-bar{
+  height: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 1fr 15%;
+  padding: 0 30px;
+  background-color: $white-color;
+  z-index: 100;
+  .nav-bar__cont-izquierda{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar__cont-centro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul.menu-items{
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0;
+
+      li.menu-items__item {
+        flex-basis: 25%;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .line-active{
+          display: none;
+          width: 50%;
+          height: 0;
+          border-top: 3px solid #FF5A70;
+          position: absolute;
+          bottom: 27px;
+        }
+
+        a.item-content{
+          text-decoration: none;
+          height: fit-content;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            display: inline-block;
+          }
+
+          .item-text{
+            margin: 0 5px;
+            font-size: 18px;
+          }
+
+          .icon-left{
+            font-size: 14px;
+          }
+
+          .icon-right{
+            font-size: 15px;
+          }
+
+          &:hover{
+            cursor: pointer;
+            color: $primary-color;
+            transition: .6s;
+          }
+
+          &:focus{
+            cursor: pointer;
+            color: $primary-color;
+            transition: .6s;
+          }
+
+          &:active{
+            cursor: pointer;
+            color: $primary-color;
+            transition: .6s;
+          }
+        }
+
+        &>*{
+          color: $hint-color;
+        }
+      }
+
+      li.active > a{
+        color: $primary-color;
+        transition: .2s;
+      }
+
+      li.active {
+        .line-active {
+          display: block;
+          transition: .6s;
+        }
+      }
+    }
+  }
+
+  .nav-bar__cont-derecha{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .linea-separadora{
+      width: 0;
+      height: 45px;
+      border-left: 1px solid #C4C4C4;
+      margin-right: 20px;
+    }
+
+    span{
+      margin-left: 10px;
+      color: $hint-color;
+    }
+  }
+}

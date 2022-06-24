@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './assets/scss/base-styles.scss';
+@import './assets/scss/variables.scss';
 
 router-outlet+* {
   width: 100%;
@@ -12,5 +13,9 @@ router-outlet+* {
   margin: 0;
   font-family: "aileron", Arial, Helvetica, sans-serif;
 }
-html, body { height: 100%; }
+html, body { height: 100%; background-color: $backgroun-color;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.hover:hover{
+  cursor: pointer;
+}

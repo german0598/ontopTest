@@ -1,0 +1,26 @@
+@import '../../../assets/scss/variables.scss';
+
+:host{
+  display: flex;
+  justify-content: center;
+}
+
+.contracts {
+  padding-top: 100px;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  &>{
+    width: 100%;
+  }
+
+  .contracts__tittle{
+    display: flex;
+    justify-content: center;
+    h2{
+      font-size: 2rem;
+    }
+  }
+}
