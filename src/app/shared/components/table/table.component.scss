@@ -101,16 +101,20 @@
   }
 
   .table-xs{
-    display: block;
+    display: inline-block;
     opacity: 1;
     padding: 15px 25px;
     flex-flow: column wrap;
+    margin: 0 10px;
 
     .table-row{
       padding: 10px;
       display: flex;
       flex-flow: row wrap;
-      height: 40px;
+
+      @media(min-width: 400px){
+        height: 40px;
+      }
 
       .key{
         flex-basis: 40%;

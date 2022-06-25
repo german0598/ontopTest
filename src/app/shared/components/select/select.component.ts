@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { dataSelect } from '../../models/select.model';
 
 @Component({
   selector: 'app-select',
@@ -8,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SelectComponent implements OnInit {
 
   @Input() placeholder = 'Select option';
+  @Input() elements: dataSelect[] = [];
 
   constructor() { }
 

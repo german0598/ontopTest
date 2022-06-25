@@ -12,4 +12,11 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navegar( idItem: any ){
+    const itemEscogido = document.getElementById(idItem);
+    const itemsMenu = document.querySelectorAll('.menu-items__item');
+    itemsMenu.forEach( (item) => item.classList.remove('active'));
+    itemEscogido?.classList.add('active');
+  }
+
 }
