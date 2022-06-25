@@ -34,17 +34,17 @@
         <app-calendar></app-calendar>
       </div>
       <div class="contracts__controls-type">
-        <app-select [placeholder]="'Contract type'"></app-select>
+        <app-select [placeholder]="'Contract type'" [elements]="contractTypes"></app-select>
       </div>
       <div class="contracts__controls-name">
         <input autocomplete="off" type="text" class="input-shadow" name="name" id="name" placeholder="Contract name">
       </div>
       <div class="contracts__controls-status">
-        <app-select [placeholder]="'Status'"></app-select>
+        <app-select [placeholder]="'Status'" [elements]="statusList"></app-select>
       </div>
     </div>
   </div>
   <div class="contracts__table">
-    <app-table></app-table>
+    <app-table [listElements]="contracts | async"></app-table>
   </div>
 </div>
