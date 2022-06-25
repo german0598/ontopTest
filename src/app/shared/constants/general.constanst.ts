@@ -1,4 +1,5 @@
 import { dataSelect } from '../models/select.model';
+import { Contract } from '../models/contracts.model';
 
 export const MONTHS: dataSelect [] = [
   {value: 1, text: 'JAN'},
@@ -24,3 +25,65 @@ export const STATUS: dataSelect [] = [
   {value: 'AT', text: 'Active'},
   {value: 'SP', text: ' Signature pending'},
 ]
+
+export const INITSTATECONTRACTS: Contract[] = [
+  {
+    img: 'Ellipse-29.png',
+    contractorName: 'Darlene Robertson',
+    amount: 200,
+    startDate: new Date(),
+    status: {code: 'AT', text: 'Active'},
+    type: 'Traditional'
+  },
+  {
+    img: 'Ellipse-41.png',
+    contractorName: 'Darlene Robertson',
+    amount: 300,
+    startDate: new Date(),
+    status: {code: 'SP', text: 'Signature pending'},
+    type: 'Traditional'
+  },
+  {
+    img: 'Ellipse-43.png',
+    contractorName: 'Darlene Robertson',
+    amount: 500,
+    startDate: new Date(),
+    status: {code: 'AT', text: 'Active'},
+    type: 'Traditional'
+  }
+];
+
+export const CONTRACTS: Contract[] = [
+  {
+    img: 'Ellipse-29.png',
+    contractorName: 'Darlene Robertson',
+    amount: 200,
+    startDate: new Date(),
+    status: {code: 'AT', text: 'Active'},
+    type: 'Traditional'
+  },
+  {
+    img: 'Ellipse-41.png',
+    contractorName: 'Darlene Robertson',
+    amount: 300,
+    startDate: new Date(),
+    status: {code: 'SP', text: 'Signature pending'},
+    type: 'Traditional'
+  },
+  {
+    img: 'Ellipse-43.png',
+    contractorName: 'Darlene Robertson',
+    amount: 500,
+    startDate: new Date(),
+    status: {code: 'AT', text: 'Active'},
+    type: 'Traditional'
+  },
+  {
+    img: 'Ellipse-43.png',
+    contractorName: 'Darlene Robertson',
+    amount: 500,
+    startDate: new Date(),
+    status: {code: 'AT', text: 'Active'},
+    type: 'Traditional'
+  }
+];
